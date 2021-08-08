@@ -1,0 +1,3 @@
+[submodule "fe-news"]
+	path = fe-news
+	url = git@github.com:naver/fe-news.git
