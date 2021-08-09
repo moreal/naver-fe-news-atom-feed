@@ -7,6 +7,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: recursive
+      - name: restore mtime
+        run: |
+          set -ev
+          sudo apt install git-restore-mtime
+          git restore-mtime .
+        working-directory: fe-news
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
