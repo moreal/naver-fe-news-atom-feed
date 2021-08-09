@@ -62,7 +62,7 @@ fn main() -> io::Result<()> {
 
     let mut content = Content::default();
     content.set_content_type("html".to_owned());
-    content.set_value(html_escape::encode_quoted_attribute(&rendered).to_string());
+    content.set_value(html_escape::encode_text(&rendered).to_string());
 
     let filename = filename.to_str().to_owned().unwrap();
     let title = Path::new(filename).file_stem().unwrap().to_str().unwrap().to_owned();
