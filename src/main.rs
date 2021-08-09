@@ -56,12 +56,14 @@ fn main() -> io::Result<()> {
 
     let filename = filename.to_str().to_owned().unwrap();
     let title = Path::new(filename).file_stem().unwrap().to_str().unwrap().to_owned();
+    let news_github_url = format!("{}/blob/master/issues/{}", FENEWS_GITHUB_URL, filename).to_owned();
     let entry = EntryBuilder::default()
+      .id(&news_github_url)
       .title(title)
       .content(content)
       .updated(updated)
       .links(vec![
-        LinkBuilder::default().href(format!("{}/blob/master/issues/{}", FENEWS_GITHUB_URL, filename)).build()
+        LinkBuilder::default().href(&news_github_url).build()
       ])
       .build();
 
