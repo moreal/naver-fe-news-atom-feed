@@ -12,6 +12,7 @@ jobs:
           set -ev
           sudo apt install git-restore-mtime
           ls -al issues
+          git log
           git restore-mtime .
           ls -al issues
         working-directory: fe-news
