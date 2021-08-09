@@ -1,6 +1,6 @@
 use std::{fs::{self, File}, io, time::UNIX_EPOCH, path::Path};
 use comrak::{parse_document, format_html, Arena, ComrakOptions};
-use atom_syndication::{Content, Entry, EntryBuilder, FeedBuilder, FixedDateTime, LinkBuilder, Text};
+use atom_syndication::{CategoryBuilder, Content, Entry, EntryBuilder, FeedBuilder, FixedDateTime, LinkBuilder, Text};
 use chrono::{FixedOffset, TimeZone};
 
 const FENEWS_PATH: &str = "./fe-news/issues";
@@ -31,6 +31,11 @@ fn main() -> io::Result<()> {
     .title("fe-news")
     .icon(NAVER_GITHUB_LOGO_URL.to_owned())
     .logo(NAVER_GITHUB_LOGO_URL.to_owned())
+    .categories(vec![
+      CategoryBuilder::default().term("technology").build(),
+      CategoryBuilder::default().term("web").build(),
+      CategoryBuilder::default().term("frontend").build()
+    ])
     .to_owned();
   let mut entries: Vec<Entry> = vec![];
   let mut latest_updated: Option<FixedDateTime> = None;
