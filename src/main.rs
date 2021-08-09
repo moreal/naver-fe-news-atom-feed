@@ -72,6 +72,7 @@ fn main() -> io::Result<()> {
       .title(title)
       .content(content)
       .updated(updated)
+      .published(updated)
       .links(vec![
         LinkBuilder::default().href(&news_github_url).build()
       ])
