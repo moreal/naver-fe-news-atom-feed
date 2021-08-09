@@ -5,6 +5,7 @@ use chrono::{FixedOffset, TimeZone};
 
 const FENEWS_PATH: &str = "./fe-news/issues";
 const FENEWS_GITHUB_URL: &str = "https://github.com/naver/fe-news";
+const NAVER_GITHUB_LOGO_URL: &str = "https://avatars.githubusercontent.com/u/6589568?s=200&v=4";
 
 fn render_markdown(content: &str) -> io::Result<String> {
   let arena = Arena::new();
@@ -26,7 +27,10 @@ fn main() -> io::Result<()> {
     .collect::<Result<Vec<_>, io::Error>>()?;
 
   let feed_file = File::create("index.xml")?;
-  let mut feed_builder = FeedBuilder::default().title("fe-news").to_owned();
+  let mut feed_builder = FeedBuilder::default()
+    .title("fe-news")
+    .icon(NAVER_GITHUB_LOGO_URL.to_owned())
+    .to_owned();
   let mut entries: Vec<Entry> = vec![];
   let mut latest_updated: Option<FixedDateTime> = None;
   for (filename, path, metadata) in news_entries {
