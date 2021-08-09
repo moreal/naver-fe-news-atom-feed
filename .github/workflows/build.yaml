@@ -11,7 +11,9 @@ jobs:
         run: |
           set -ev
           sudo apt install git-restore-mtime
+          ls -al issues
           git restore-mtime .
+          ls -al issues
         working-directory: fe-news
       - uses: actions-rs/toolchain@v1
         with:
