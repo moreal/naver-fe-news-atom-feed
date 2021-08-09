@@ -43,7 +43,7 @@ fn main() -> io::Result<()> {
 
     if let Some(latest) = latest_updated {
       match latest.cmp(&updated) {
-        std::cmp::Ordering::Greater => latest_updated = Some(updated),
+        std::cmp::Ordering::Less => latest_updated = Some(updated),
         _ => ()
       };
     } else {
