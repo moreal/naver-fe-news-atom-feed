@@ -1,9 +1,10 @@
 use std::{fs::{self, File}, io, time::UNIX_EPOCH};
 use comrak::{parse_document, format_html, Arena, ComrakOptions};
-use atom_syndication::{Content, Entry, EntryBuilder, FeedBuilder, FixedDateTime, Text};
+use atom_syndication::{Content, Entry, EntryBuilder, FeedBuilder, FixedDateTime, LinkBuilder, Text};
 use chrono::{FixedOffset, TimeZone};
 
 const FENEWS_PATH: &str = "./fe-news/issues";
+const FENEWS_GITHUB_URL: &str = "https://github.com/naver/fe-news";
 
 fn render_markdown(content: &str) -> io::Result<String> {
   let arena = Arena::new();
@@ -21,14 +22,14 @@ fn render_markdown(content: &str) -> io::Result<String> {
 
 fn main() -> io::Result<()> {
   let news_entries = fs::read_dir(FENEWS_PATH)?
-    .map(|res| res.map(|e| (e.path(), e.metadata().unwrap())))
+    .map(|res| res.map(|e| (e.file_name(), e.path(), e.metadata().unwrap())))
     .collect::<Result<Vec<_>, io::Error>>()?;
 
   let feed_file = File::create("index.xml")?;
   let mut feed_builder = FeedBuilder::default().title("fe-news").to_owned();
   let mut entries: Vec<Entry> = vec![];
   let mut latest_updated: Option<FixedDateTime> = None;
-  for (path, metadata) in news_entries {
+  for (filename, path, metadata) in news_entries {
     let raw_content = fs::read(path.to_owned())?;
     let markdown_content = String::from_utf8(raw_content).unwrap();
     let rendered = render_markdown(&markdown_content)?;
@@ -58,6 +59,9 @@ fn main() -> io::Result<()> {
       .title(title)
       .content(content)
       .updated(updated)
+      .links(vec![
+        LinkBuilder::default().href(format!("{}/blob/master/issues/{}", FENEWS_GITHUB_URL, filename.to_str().to_owned().unwrap())).build()
+      ])
       .build();
 
     entries.push(entry);
