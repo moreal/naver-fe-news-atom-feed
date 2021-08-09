@@ -30,6 +30,7 @@ fn main() -> io::Result<()> {
   let mut feed_builder = FeedBuilder::default()
     .title("fe-news")
     .icon(NAVER_GITHUB_LOGO_URL.to_owned())
+    .logo(NAVER_GITHUB_LOGO_URL.to_owned())
     .to_owned();
   let mut entries: Vec<Entry> = vec![];
   let mut latest_updated: Option<FixedDateTime> = None;
