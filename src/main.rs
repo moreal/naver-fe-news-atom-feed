@@ -1,4 +1,4 @@
-use std::{fs::{self, File}, io, time::UNIX_EPOCH};
+use std::{fs::{self, File}, io, time::UNIX_EPOCH, path::Path};
 use comrak::{parse_document, format_html, Arena, ComrakOptions};
 use atom_syndication::{Content, Entry, EntryBuilder, FeedBuilder, FixedDateTime, LinkBuilder, Text};
 use chrono::{FixedOffset, TimeZone};
@@ -34,7 +34,6 @@ fn main() -> io::Result<()> {
     let markdown_content = String::from_utf8(raw_content).unwrap();
     let rendered = render_markdown(&markdown_content)?;
 
-    let title = Text::plain(path.to_str().to_owned().unwrap());
     let updated: FixedDateTime = match metadata.modified()?.duration_since(UNIX_EPOCH) {
       Ok(duration) => FixedOffset::east(0).timestamp(duration.as_secs() as i64, duration.subsec_nanos()),
       Err(_) => {
@@ -55,12 +54,14 @@ fn main() -> io::Result<()> {
     content.set_content_type("xhtml".to_owned());
     content.set_value(rendered);
 
+    let filename = filename.to_str().to_owned().unwrap();
+    let title = Path::new(filename).file_stem().unwrap().to_str().unwrap().to_owned();
     let entry = EntryBuilder::default()
       .title(title)
       .content(content)
       .updated(updated)
       .links(vec![
-        LinkBuilder::default().href(format!("{}/blob/master/issues/{}", FENEWS_GITHUB_URL, filename.to_str().to_owned().unwrap())).build()
+        LinkBuilder::default().href(format!("{}/blob/master/issues/{}", FENEWS_GITHUB_URL, filename)).build()
       ])
       .build();
 
