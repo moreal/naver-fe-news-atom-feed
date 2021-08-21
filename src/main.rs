@@ -2,7 +2,9 @@ use std::{fs::{self, File}, io, time::UNIX_EPOCH, path::Path};
 use comrak::{parse_document, format_html, Arena, ComrakOptions};
 use atom_syndication::{CategoryBuilder, Content, Entry, EntryBuilder, FeedBuilder, FixedDateTime, LinkBuilder, Text};
 use chrono::{FixedOffset, TimeZone};
+use std::process::Command;
 
+const FENEWS_GIT_DIRECTORY: &str = "./fe-news";
 const FENEWS_PATH: &str = "./fe-news/issues";
 const FENEWS_GITHUB_URL: &str = "https://github.com/naver/fe-news";
 const NAVER_GITHUB_LOGO_URL: &str = "https://avatars.githubusercontent.com/u/6589568?s=200&v=4";
@@ -44,6 +46,27 @@ fn main() -> io::Result<()> {
     let markdown_content = String::from_utf8(raw_content).unwrap();
     let rendered = render_markdown(&markdown_content)?;
 
+    let created: FixedDateTime = {
+        let output = Command::new("git")
+            .arg("log")
+            .arg("--format=\"%aD\"")
+            .arg(format!("issues/{}", filename.to_str().to_owned().unwrap()))
+            .current_dir(FENEWS_GIT_DIRECTORY)
+            .output().expect("12");
+
+        let output = String::from_utf8(output.stdout).unwrap();
+
+        let datetime_string = output.rsplit('\n').nth(1).unwrap();
+
+        let output = Command::new("date")
+            .arg(format!("--date={}", datetime_string[1..datetime_string.len() - 1].to_owned()))
+            .arg("--iso-8601=seconds")
+            .arg("--utc")
+            .output().expect("12");
+        let datetime_string = String::from_utf8(output.stdout).unwrap();
+
+        datetime_string.parse::<FixedDateTime>().unwrap()
+    };
     let updated: FixedDateTime = match metadata.modified()?.duration_since(UNIX_EPOCH) {
       Ok(duration) => FixedOffset::east(0).timestamp(duration.as_secs() as i64, duration.subsec_nanos()),
       Err(_) => {
@@ -72,7 +95,7 @@ fn main() -> io::Result<()> {
       .title(title)
       .content(content)
       .updated(updated)
-      .published(updated)
+      .published(created)
       .links(vec![
         LinkBuilder::default().href(&news_github_url).build()
       ])
