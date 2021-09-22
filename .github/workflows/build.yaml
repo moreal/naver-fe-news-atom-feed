@@ -11,6 +11,9 @@ jobs:
         with:
           fetch-depth: 0
           submodules: recursive
+      - name: update naver/fe-news to latest
+        run: git pull origin master
+        working-directory: fe-news
       - name: restore mtime
         run: |
           set -ev
