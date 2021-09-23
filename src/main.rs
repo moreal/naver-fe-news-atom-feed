@@ -1,17 +1,19 @@
 mod git;
+mod error;
 
 use atom_syndication::{
-    CategoryBuilder, Content, Entry, EntryBuilder, FeedBuilder, FixedDateTime, LinkBuilder,
+  CategoryBuilder, Content, Entry, EntryBuilder, FeedBuilder, FixedDateTime, LinkBuilder,
 };
 use chrono::{FixedOffset, TimeZone};
 use comrak::{format_html, parse_document, Arena, ComrakOptions};
 use std::{
-    fs::{self, File},
-    io,
-    path::Path,
-    time::{SystemTimeError, UNIX_EPOCH},
+  fs::{self, File},
+  io,
+  path::Path,
+  time::UNIX_EPOCH,
 };
 
+use crate::error::Error;
 use crate::git::created_at;
 
 const FENEWS_GIT_DIRECTORY: &str = "./fe-news";
@@ -98,40 +100,4 @@ fn main() -> std::result::Result<(), Error> {
         .write_to(feed_file)?;
 
     Ok(())
-}
-
-struct Error {
-    reason: String,
-}
-
-impl std::fmt::Debug for Error {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        f.debug_struct("Error")
-            .field("reason", &self.reason)
-            .finish()
-    }
-}
-
-impl From<io::Error> for Error {
-    fn from(e: io::Error) -> Self {
-        Error {
-            reason: e.to_string(),
-        }
-    }
-}
-
-impl From<SystemTimeError> for Error {
-    fn from(e: SystemTimeError) -> Self {
-        Error {
-            reason: e.to_string(),
-        }
-    }
-}
-
-impl From<atom_syndication::Error> for Error {
-    fn from(e: atom_syndication::Error) -> Self {
-        Error {
-            reason: e.to_string(),
-        }
-    }
 }
