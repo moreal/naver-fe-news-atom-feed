@@ -1,15 +1,18 @@
+mod git;
+
 use atom_syndication::{
     CategoryBuilder, Content, Entry, EntryBuilder, FeedBuilder, FixedDateTime, LinkBuilder,
 };
 use chrono::{FixedOffset, TimeZone};
 use comrak::{format_html, parse_document, Arena, ComrakOptions};
-use std::process::Command;
 use std::{
     fs::{self, File},
     io,
     path::Path,
     time::{SystemTimeError, UNIX_EPOCH},
 };
+
+use crate::git::created_at;
 
 const FENEWS_GIT_DIRECTORY: &str = "./fe-news";
 const FENEWS_PATH: &str = "./fe-news/issues";
@@ -50,32 +53,7 @@ fn main() -> std::result::Result<(), Error> {
         let markdown_content = String::from_utf8(raw_content).unwrap();
         let rendered = render_markdown(&markdown_content)?;
 
-        let created: FixedDateTime = {
-            let output = Command::new("git")
-                .arg("log")
-                .arg("--format=\"%aD\"")
-                .arg(format!("issues/{}", filename.to_str().to_owned().unwrap()))
-                .current_dir(FENEWS_GIT_DIRECTORY)
-                .output()
-                .expect("12");
-
-            let output = String::from_utf8(output.stdout).unwrap();
-
-            let datetime_string = output.rsplit('\n').nth(1).unwrap();
-
-            let output = Command::new("date")
-                .arg(format!(
-                    "--date={}",
-                    datetime_string[1..datetime_string.len() - 1].to_owned()
-                ))
-                .arg("--iso-8601=seconds")
-                .arg("--utc")
-                .output()
-                .expect("12");
-            let datetime_string = String::from_utf8(output.stdout).unwrap();
-
-            datetime_string.parse::<FixedDateTime>().unwrap()
-        };
+        let created: FixedDateTime = created_at(FENEWS_GIT_DIRECTORY, filename.to_str().unwrap());
         let duration = metadata.modified()?.duration_since(UNIX_EPOCH)?;
         let updated: FixedDateTime =
             FixedOffset::east(0).timestamp(duration.as_secs() as i64, duration.subsec_nanos());
