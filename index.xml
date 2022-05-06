@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>fe-news</title><id></id><updated>2022-05-04T03:37:50+00:00</updated><category term="technology"/><category term="web"/><category term="frontend"/><icon>https://avatars.githubusercontent.com/u/6589568?s=200&v=4</icon><logo>https://avatars.githubusercontent.com/u/6589568?s=200&v=4</logo><entry><title>2020-02</title><id>https://github.com/naver/fe-news/blob/master/issues/2020-02.md</id><updated>2020-07-07T02:04:03+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2020-02.md" rel="alternate"/><published>2020-02-05T07:56:21+00:00</published><content type="html">&lt;h1&gt;2020-02 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>fe-news</title><id></id><updated>2022-05-05T09:29:17+00:00</updated><category term="technology"/><category term="web"/><category term="frontend"/><icon>https://avatars.githubusercontent.com/u/6589568?s=200&v=4</icon><logo>https://avatars.githubusercontent.com/u/6589568?s=200&v=4</logo><entry><title>2020-02</title><id>https://github.com/naver/fe-news/blob/master/issues/2020-02.md</id><updated>2020-07-07T02:04:03+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2020-02.md" rel="alternate"/><published>2020-02-05T07:56:21+00:00</published><content type="html">&lt;h1&gt;2020-02 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
 &lt;h1&gt;링크 &amp;amp; 읽을꺼리&lt;/h1&gt;
 &lt;h2&gt;&lt;a href="https://illustrated.dev/"&gt;Illustraded.dev&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;FE 기술들에 대한 근본적인 개념을 도식화해 설명해 주며, GraphQL, Babel, React Hooks 등에 대한 주제들이 포함되어 있다.&lt;/p&gt;
@@ -2301,7 +2301,7 @@ It called out the two types with identical fields.
 &lt;h2&gt;&lt;a href="https://www.remotion.dev/"&gt;Remotion&lt;/a&gt;&lt;/h2&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Remotion은 리액트를 사용하여 비디오와 모션 그래픽을 제작할 수 있는 라이브러리다. CSS, Canvas, SVG, WebGL 같은 웹 기술을 사용해 비디오를 만들 수 있다.&lt;/p&gt;
-</content></entry><entry><title>2022-05</title><id>https://github.com/naver/fe-news/blob/master/issues/2022-05.md</id><updated>2022-05-04T03:37:50+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2022-05.md" rel="alternate"/><published>2022-05-04T03:37:50+00:00</published><content type="html">&lt;h1&gt;2022-05 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
+</content></entry><entry><title>2022-05</title><id>https://github.com/naver/fe-news/blob/master/issues/2022-05.md</id><updated>2022-05-05T09:29:17+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2022-05.md" rel="alternate"/><published>2022-05-04T03:37:50+00:00</published><content type="html">&lt;h1&gt;2022-05 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
 &lt;h1&gt;링크 &amp;amp; 읽을거리&lt;/h1&gt;
 &lt;h2&gt;모던 프론트엔드 프로젝트 구성 기법&lt;/h2&gt;
 &lt;p&gt;다음의 2개 시리즈로 구성된 글을 통해 단일 코드 저장소에서 다중 프로젝트를 관리할 수 있는 Monorepo 개발 전략의 등장 배경과 함께, 사용할 수 있는 다양한 도구들에 대한 소개 및 장단점을 소개한다.&lt;/p&gt;
@@ -2341,7 +2341,7 @@ async function doWait() {
     return await work();
 }
 
-  async function dontWait() {
+async function dontWait() {
     return work();
 }
 
