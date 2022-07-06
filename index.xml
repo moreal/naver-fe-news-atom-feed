@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>fe-news</title><id></id><updated>2022-06-02T05:15:14+00:00</updated><category term="technology"/><category term="web"/><category term="frontend"/><icon>https://avatars.githubusercontent.com/u/6589568?s=200&v=4</icon><logo>https://avatars.githubusercontent.com/u/6589568?s=200&v=4</logo><entry><title>2022-06</title><id>https://github.com/naver/fe-news/blob/master/issues/2022-06.md</id><updated>2022-06-02T05:15:14+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2022-06.md" rel="alternate"/><published>2022-06-02T04:56:06+00:00</published><content type="html">&lt;h1&gt;2022-06 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>fe-news</title><id></id><updated>2022-07-06T07:04:03+00:00</updated><category term="technology"/><category term="web"/><category term="frontend"/><icon>https://avatars.githubusercontent.com/u/6589568?s=200&v=4</icon><logo>https://avatars.githubusercontent.com/u/6589568?s=200&v=4</logo><entry><title>2022-06</title><id>https://github.com/naver/fe-news/blob/master/issues/2022-06.md</id><updated>2022-06-02T05:15:14+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2022-06.md" rel="alternate"/><published>2022-06-02T04:56:06+00:00</published><content type="html">&lt;h1&gt;2022-06 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
 &lt;h1&gt;링크 &amp;amp; 읽을거리&lt;/h1&gt;
 &lt;h2&gt;&lt;a href="https://www.youtube.com/watch?v=5b4YcLB4DVI&amp;amp;list=PLNYkxOF6rcIDKuCU73tmdRN_-mI3tKFPD"&gt;Web at IO 2022&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;구글의 개발자 연례 행사인 Google I/O 2022가 지난 5월 11~12일 진행되었으며, Web at IO 2022는 이들 중 23개의 웹 세션들에 대한 재생 목록이다.  웹 플랫폼, 개발자 도구, 반응형 페이지의 현주소, 성능, PWA 등 다채로운 새로운 소식들로 가득 차 있다. 웹의 최신 동향을 알고 싶다면 살펴보기를 추천한다.&lt;/p&gt;
@@ -337,7 +337,7 @@ React Query, SWR, Apollo와 같은 라이브러리가 추구하는 것과 같이
 &lt;h2&gt;&lt;a href="https://microsoft.github.io/monaco-editor/"&gt;Monaco Editor&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;VS Code의 웹 버전. NPM으로 설치해 브라우저에서 VS Code를 이용할 수 있다. 모바일 브라우저는 지원하지 않는다.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
-</content></entry><entry><title>2021-08</title><id>https://github.com/naver/fe-news/blob/master/issues/2021-08.md</id><updated>2022-01-14T04:07:24+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2021-08.md" rel="alternate"/><published>2021-07-30T02:18:54+00:00</published><content type="html">&lt;h1&gt;2021-08 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
+</content></entry><entry><title>2021-08</title><id>https://github.com/naver/fe-news/blob/master/issues/2021-08.md</id><updated>2022-02-03T01:45:59+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2021-08.md" rel="alternate"/><published>2021-07-30T02:18:54+00:00</published><content type="html">&lt;h1&gt;2021-08 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
 &lt;h1&gt;링크 &amp;amp; 읽을거리&lt;/h1&gt;
 &lt;h2&gt;&lt;a href="https://pascalpares.appspot.ovh/webassembly-for-javascript-developers/"&gt;An Introduction to WebAssembly for JavaScript Developers&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;이 문서는 JavaScript WebAssembly 인터페이스에 대한 소개 글로 JavaScript 코드가 wasm과 어떻게 상호작용하는지와 함께 래퍼(&lt;a href="https://github.com/emscripten-core/emscripten"&gt;Emscripten&lt;/a&gt; 도구 등을 통해 생성된)를 통한 구현 방식에  대해도 설명한다.&lt;/p&gt;
@@ -649,6 +649,122 @@ console.log();
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;UI Editor를 만들면서 맞이한 문제점을 기술하고, 그 문제를 해결하는 방법을 설명한 글이다.
 Tree-Sitter, LSP와 같이 IDE에서 도입한 솔루션을 검토하고 이를 바탕으로 새로운 마크다운 파서를 개발한 내용인데, 에디터 만드는 사람에게는 꽤나 도전적이고 재미있는 글로 다가올 것이다.&lt;/p&gt;
+</content></entry><entry><title>2022-07</title><id>https://github.com/naver/fe-news/blob/master/issues/2022-07.md</id><updated>2022-07-06T07:04:03+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2022-07.md" rel="alternate"/><published>2022-07-01T13:01:20+00:00</published><content type="html">&lt;h1&gt;2022-07 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
+&lt;h1&gt;링크 &amp;amp; 읽을거리&lt;/h1&gt;
+&lt;h2&gt;&lt;a href="https://h3manth.com/ES2022/"&gt;ES2022 Features!&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;스위스 제네바에서 열린 &lt;a href="https://www.ecma-international.org/news/ecma-international-approves-new-standards-6/"&gt;123번째 ECMA 총회&lt;/a&gt;(General Assembly)에서는 ECMA-262의 13번째 에디션인 ‘ECMAScript 2022’가 승인되었다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.at() method on built-in indexables&lt;/li&gt;
+&lt;li&gt;RegExp Match Indices&lt;/li&gt;
+&lt;li&gt;Object.hasOwn&lt;/li&gt;
+&lt;li&gt;Error cause&lt;/li&gt;
+&lt;li&gt;Top-level await&lt;/li&gt;
+&lt;li&gt;Class field declarations&lt;/li&gt;
+&lt;li&gt;Ergonomic brand checks for private fields&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[참고] 추가로 다음 글도 참고해 보면 좋다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://2ality.com/2022/06/ecmascript-2022.html"&gt;Ecma International approves ECMAScript 2022: What’s new?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a href="https://www.youtube.com/watch?v=kMlkCYL9qo0"&gt;Svelte Origins: A JavaScript Documentary&lt;/a&gt;&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;개발자 구인 플랫폼을 서비스하는 &lt;a href="https://www.offerzen.com/"&gt;OfferZen&lt;/a&gt;에서 운영 중인 YouTube 채널에서는 다양한 개발 프레임워크, 도구 등에 대한 기원(Origins)에 대한 다큐멘터리를 공개하고 있다.&lt;/p&gt;
+&lt;p&gt;이 영상에서는 Svelte 개발자인 Rich Harrison는 저널리즘을 공부하다, 2008년 런던의  금융 관련 출간물을 발행하는 회사에 첫 취업을 하게 되었다고 한다. 그러나, 2008년 금융위기로 인해 일하기 시작한 첫 몇 달간 많은 사람들이 해고되는 것을 직접 목격하면서부터  스스로가 좀 더 고용되기에 매력적인 사람이 되기 위해, 보다 기술적 역할을 수행하기 적합한 사람이 되기 위해 노력했다고 말한다.&lt;/p&gt;
+&lt;p&gt;몇 년 뒤 회사에서 아주 베이직한 HTML 작업이 필요했을 때 자신이 가장 잘 준비되어 있었고, 그렇게 개발자로써 커리어가 시작되었다고 한다. Svelte에 꼭 관심이 없더라도 개발적 관점에서 흥미 있게 볼 수 있는 내용들이 많아 재미있게 볼 수 있다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[참고] 추가로 Tailwind에 대한 영상도 재미있게 볼 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=1x7HlvSfW6s"&gt;How Tailwind CSS came to be feat. Adam Wathan&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a href="https://gist.github.com/tkrotoff/b1caa4c3a185629299ec234d2314e190"&gt;Front-end Frameworks Popularity&lt;/a&gt;&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;React는 현재 가장 인기 있는 Front-end 프레임워크다. 이 문서에서는 다양한 소스(StackOverflow trend, 각종 개발자 설문조사, 트위터 언급량 등)들을 통해 그러한 ‘사실’을 보여준다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://www.youtube.com/playlist?list=PL37ZVnwpeshGuMZrOZzEo8QLBjjpbtBGm"&gt;JSConf Budapest 2022&lt;/a&gt;&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;지난 6월 2,3일 이틀간 진행되었던 JSConf Budapest 발표 영상이다. 코로나로 인해 2년간 열리지 못했다가 오랜만에 오프라인에서 진행되었다. 다채로운 세션들로 구성되어 있으며, 2년간의 판데믹으로 인한 여파 때문인지 모르겠지만 정신건강과 스트레스 등에 대한 세션들이 눈에 띈다.&lt;/p&gt;
+&lt;p&gt;오프라인 콘퍼런스 참여에 목마름이 있다면, 조금이나마 그 갈증을 해소해 줄 것이다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://www.youtube.com/watch?v=H52DmvfzDWM"&gt;Web browsers over the last 28 years&lt;/a&gt;&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;지난 6월 15일 Internet Explorer가 드디어 작별을 고했고, &lt;a href="https://edition.cnn.com/2022/06/18/asia/internet-explorer-gravestone-viral-south-korea-intl-hnk/index.html"&gt;국내 개발자의 묘비 설치&lt;/a&gt; 조크는 전 세계적인 화제가 되기도 했었다. 대중적인 웹 브라우저가 등장한 이래로 수많은 브라우저가 등장했다 사라지기를 반복했다. 이 영상은 1994년~2022년까지의 브라우저 별 점유율 변화를 통한 흥망성쇠를 훑어볼 수 있게 한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[참고] 브라우저의 역사에 대해 관심이 있다면 다음 링크들을 참고하라.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mozilla.org/en-US/firefox/browsers/browser-history/"&gt;The History of Web Browsers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;만화로 나누는 자유/오픈소스 소프트웨어 이야기
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://joone.net/2021/10/11/41-%eb%aa%a8%ec%9e%90%ec%9d%b5-%eb%b8%8c%eb%9d%bc%ec%9a%b0%ec%a0%80%ec%9d%98-%ed%83%84%ec%83%9d/"&gt;모자익 브라우저의 탄생&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://joone.net/2022/05/15/42-%eb%84%b7%ec%8a%a4%ec%bc%80%ec%9d%b4%ed%94%84-%eb%b8%8c%eb%9d%bc%ec%9a%b0%ec%a0%80/"&gt;넷스케이프 브라우저&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://joone.net/2022/06/25/43-%ed%8c%8c%ec%9d%b4%ec%96%b4%ed%8f%ad%ec%8a%a4/"&gt;파이어폭스&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;a href="https://webkit.org/blog/12824/news-from-wwdc-webkit-features-in-safari-16-beta/"&gt;WebKit Features in Safari 16 Beta&lt;/a&gt;&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;크롬이 대세 브라우저이지만 Safari도 그에 못지않게 많은 발전이 있었다. 특히 이번 Safari 16에서는 162개의 feature가 추가되었다.&lt;br /&gt;
+HTML / CSS / Web Inspector / Web API / JavaScript 그리고 WebAssembly / Security and privacy 등, 다양한 부분에 대한 기능이 추가되었다.&lt;br /&gt;
+자세한 부분은 &lt;a href="https://developer.apple.com/videos/play/wwdc2022/10048/"&gt;WWDC&lt;/a&gt;에서 소개된 영상을 참고하기 바란다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://toss.im/slash-22/sessions"&gt;토스 개발자 콘퍼런스 SLASH 22&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;토스의 개발 경험을 알려주는 온라인 세션이 6월 8일 ~ 6월 10일 3일간 열렸다.
+재미있는 주제가 많았는데 그중에서 UX, Front-end에 관련 있는 주제 몇 가지만 기술했다. 한번 살펴보기 바란다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://toss.im/slash-22/sessions/1-3"&gt;UX와 DX, 그 모든 경험을 위한 디자인 시스템&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://toss.im/slash-22/sessions/1-5"&gt;잃어버린 유저의 시간을 찾아서: 100년을 아껴준 SSR 이야기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://toss.im/slash-22/sessions/1-7"&gt;Effective Component 지속 가능한 성장과 컴포넌트&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://toss.im/slash-22/sessions/3-5"&gt;잃어버린 개발자의 시간을 찾아서: 매일 하루를 아끼는 DevOps 이야기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a href="https://evan-moon.github.io/2022/05/07/toss-retrospective/"&gt;토스에서의 시간을 돌아보며&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;토스에서 일했던 2년 반의 입사 경험을 기술한 글이다. 토스는 다른 기업보다 어떻게 일을 더 빠르게 처리하는지부터 성장하면서 겪은 토스 조직의 문제점을 어떤 식으로 해결해 나갔는지도 설명하고 있다.
+조직관리와 성장에 관심 있는 분이라면 한 번 읽으면 좋은 글이다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://miryang.dev/blog/how-studied-frontend"&gt;내가 프론트엔드를 학습한 방법&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;보안 7개월, 백엔드 1년 7개월 경험이 있는 경력 3년 차 개발자의 프론트엔드 개발 전환기이다.
+처음부터 어떻게 학습했고, 어떤 강좌를 통해 학습을 했는지 기술하고 있다. 초보 개발자나 프론트엔드 개발을 처음 시작하시는 분이라면 참고해 보면 좋을 것 같다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://jrsinclair.com/articles/2022/javascript-function-composition-whats-the-big-deal/"&gt;Understanding the Closure Trap of React Hooks&lt;/a&gt;&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;React 16.8 버전부터 Hook이 나온 이후로 이제는 보편적으로 Hook을 사용한다.
+하지만, 개발하다 보면 직면하게 되는 고전적인 문제 중 하나는 &lt;code&gt;closure trap of React Hooks&lt;/code&gt;이다.
+이 아티클을 통해서 문제가 어떤 것인지, 왜 그렇게 동작을 하는지에 대해 &lt;code&gt;FiberNode&lt;/code&gt;와 &lt;code&gt;useEffect&lt;/code&gt;의 구현을 따라가며 원리를 파악해 볼 수 있다.&lt;/p&gt;
+&lt;h1&gt;튜토리얼&lt;/h1&gt;
+&lt;h2&gt;&lt;a href="https://blog.outsider.ne.kr/1602"&gt;AbortController로 요청 취소하기&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;AbortContoller를 이용하여 요청을 취소하는 기능을 소개한 글이다.&lt;br /&gt;
+브라우저에서의 요청과 Node.js 스트림의 요청을 취소하는 기능을 소개하고 있다.&lt;br /&gt;
+관련해서 &lt;a href="https://whistlr.info/2022/abortcontroller-is-your-friend/"&gt;AbortController is your friend&lt;/a&gt; 튜토리얼 글도 있으니 참고하기 바란다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://www.smashingmagazine.com/2022/06/precise-timing-web-animations-api/"&gt;Precise Timing With Web Animations API&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Web Animation API를 이용하여 정확한 시점에 대한 정확한 애니메이션을 만들 수 있는 방법을 튜토리얼을 통해 설명하고 있다.&lt;/p&gt;
+&lt;h2&gt;vanilla-javascript-gantt-chart&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.smashingmagazine.com/2021/08/interactive-gantt-chart-component-vanilla-javascript/"&gt;Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.smashingmagazine.com/2022/06/vanilla-javascript-gantt-chart-part-2/"&gt;Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vanilla JS를 이용하여 간트 차트를 만드는 튜토리얼 이다. 많은 것을 고려해야하는 만큼 많은 것을 배울 수 있는 글이다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://css-speedrun.netlify.app/"&gt;CSS Speedrun&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;간단한 CSS 선택자 퍼즐을 풀어보는 사이트이다. 총 10 레벨로 구성되어 있다. Speedrun이라는 이름답게 각 레벨을 통과하는데 얼마의 시간을 소모했는지도 확인해 볼 수 있다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://www.youtube.com/watch?v=Rs7ARD5TCFU"&gt;Google JavaScript Interview With A Frontend Engineer&lt;/a&gt;&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;모의 Google JavaScript 인터뷰를 진행하는 영상이다.
+promiseAll, deepEquals, getTimer에 대해 인터뷰를 진행한다.&lt;/p&gt;
+&lt;h1&gt;코드와 도구&lt;/h1&gt;
+&lt;h2&gt;&lt;a href="https://jsonhero.io/"&gt;JSON HERO&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;JSON 속에 숨어 있는 이미지, 날짜, 색상 등을 미리 보기 할 수 있다. 그뿐만 아니라 구조화된 JSON도 쉽게 탐색할 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=JSONHero.jsonhero-vscode"&gt;vscode extension&lt;/a&gt; 도 있어서 VS Code에서 활용할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a href="https://clipdrop.co/remove-background"&gt;Clipdrop Remove Background&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;사진의 배경을 단 한 번의 클릭만으로 제거할 수 있는 온라인 툴이다.&lt;br /&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://timeline.knightlab.com/"&gt;Timeline JS&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;타임 라인을 쉽게 만들 수 있는 라이브러리이다. 스토리를 담는 타임라인을 간단히 만들고자 한다면 이 라이브러리를 사용해 보기 바란다.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://medium.com/@fastifyjs/fastify-v4-ga-59f2103b5f0e"&gt;Fastify V4.2&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;가장 빠르고 적은 오버헤드를 지향하는 웹 프레임워크인 Fastify가 4 버전이 릴리스됐다.
+V3에서 가지고 있던 장점을 Break Change와 성능 저하 없이 개발한 팀의 역량이 대단하다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;최근 v4.2가 공개했다.
+https://github.com/fastify/fastify/releases/tag/v4.2.0&lt;/p&gt;
+&lt;/blockquote&gt;
 </content></entry><entry><title>2020-06</title><id>https://github.com/naver/fe-news/blob/master/issues/2020-06.md</id><updated>2022-05-24T02:48:24+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2020-06.md" rel="alternate"/><published>2020-06-03T01:32:28+00:00</published><content type="html">&lt;h1&gt;2020-06 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
 &lt;h1&gt;링크 &amp;amp; 읽을거리&lt;/h1&gt;
 &lt;h2&gt;&lt;a href="https://recoiljs.org/"&gt;Recoil: State Management library for React&lt;/a&gt;&lt;/h2&gt;
@@ -1905,7 +2021,7 @@ export default ({ recordMap }) =&amp;gt; (
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Node.js 환경을 브라우저에서 실행할 수 있게 되었다. 심지어 로컬 환경보다 빌드 및 패키지 설치가 빠르며, 브라우저 샌드박스 안에서 실행되므로 안전하다고 한다.&lt;/p&gt;
 &lt;p&gt;public beta 버전이긴 하나, &lt;a href="https://stackblitz.com/"&gt;이곳&lt;/a&gt;에서 직접 사용해 볼 수 있다.&lt;/p&gt;
-</content></entry><entry><title>2021-12</title><id>https://github.com/naver/fe-news/blob/master/issues/2021-12.md</id><updated>2021-12-01T05:22:01+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2021-12.md" rel="alternate"/><published>2021-11-26T09:13:17+00:00</published><content type="html">&lt;h1&gt;2021-12 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
+</content></entry><entry><title>2021-12</title><id>https://github.com/naver/fe-news/blob/master/issues/2021-12.md</id><updated>2022-02-03T01:45:59+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2021-12.md" rel="alternate"/><published>2021-11-26T09:13:17+00:00</published><content type="html">&lt;h1&gt;2021-12 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
 &lt;h1&gt;링크 &amp;amp; 읽을거리&lt;/h1&gt;
 &lt;h2&gt;&lt;a href="https://deview.kr/2021"&gt;DEVIEW 2021&lt;/a&gt;&lt;/h2&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -2154,7 +2270,7 @@ It called out the two types with identical fields.
 &lt;h2&gt;&lt;a href="https://www.remotion.dev/"&gt;Remotion&lt;/a&gt;&lt;/h2&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;Remotion은 리액트를 사용하여 비디오와 모션 그래픽을 제작할 수 있는 라이브러리다. CSS, Canvas, SVG, WebGL 같은 웹 기술을 사용해 비디오를 만들 수 있다.&lt;/p&gt;
-</content></entry><entry><title>2022-04</title><id>https://github.com/naver/fe-news/blob/master/issues/2022-04.md</id><updated>2022-04-06T03:56:52+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2022-04.md" rel="alternate"/><published>2022-04-06T03:56:52+00:00</published><content type="html">&lt;h1&gt;2022-04 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
+</content></entry><entry><title>2022-04</title><id>https://github.com/naver/fe-news/blob/master/issues/2022-04.md</id><updated>2022-04-06T03:56:52+00:00</updated><link href="https://github.com/naver/fe-news/blob/master/issues/2022-04.md" rel="alternate"/><published>2022-03-16T15:15:36+00:00</published><content type="html">&lt;h1&gt;2022-04 &lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;
 &lt;h1&gt;링크 &amp;amp; 읽을거리&lt;/h1&gt;
 &lt;h2&gt;&lt;a href="https://reactjs.org/blog/2022/03/29/react-v18.html"&gt;React v18.0&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;React v18이 지난 3/29일 정식으로 릴리스 되었다. 주요한 기능들은 다음과 같다.&lt;/p&gt;
